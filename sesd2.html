@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #eaf0f6;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background: #fff;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #4a90e2;
+    }
+
+    /* Title */
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      margin: 40px 0 30px 0;
+      color: #4a90e2;
+      background: linear-gradient(90deg, #4a90e2, #6dd5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Projects container */
+    .projects-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 0 40px 60px;
+    }
+
+    /* Individual project card */
+    .project-card {
+      background: #fff;
+      border-radius: 15px;
+      width: 300px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-top: 4px solid transparent;
+      border-image: linear-gradient(90deg, #4a90e2, #6dd5fa) 1;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-card h3 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .project-card a {
+      color: #4a90e2;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Projects Section -->
+  <h2>Projects</h2>
+
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Project 1: Student Management System</h3>
+      <p>A Java-based app to manage student records efficiently. <a href="#">View on GitHub</a></p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project 2: Smart Health Tracker</h3>
+      <p>Python Flask app for tracking daily health stats and goals. <a href="#">View on GitHub</a></p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project 3: AI Chat Assistant</h3>
+      <p>Interactive chatbot using NLP for answering queries. <a href="#">View on GitHub</a></p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project 4: Online Book Store</h3>
+      <p>Responsive e-commerce web app for books using React.js. <a href="#">View on GitHub</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

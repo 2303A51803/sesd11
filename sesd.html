@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f5f8ff;
+    }
+
+    .contact-container {
+      text-align: center;
+      width: 400px;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: #4a90e2;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input,
+    textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #eaf2ff;
+      font-size: 16px;
+      outline: none;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #4a90e2, #6dd5fa);
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #6dd5fa, #4a90e2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contact-container">
+    <h2>Contact</h2>
+
+    <form>
+      <input type="text" placeholder="Bodasu Nitin" required>
+      <input type="email" placeholder="2303a51803@sru.edu.in" required>
+      <textarea placeholder="HLO THIS IS MY PRORTFOLIO" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>
